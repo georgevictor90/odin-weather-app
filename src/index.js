@@ -70,7 +70,6 @@ const app = {
 
       if (currentWeatherData === undefined)
         throw new Error("Invalid city name");
-      console.log(currentWeatherData);
       const weatherClass = currentWeatherData.weather[0].main.toLowerCase();
       const backgroundSrc = `../src/images/${weatherClass}.jpg`;
       document.getElementById(
