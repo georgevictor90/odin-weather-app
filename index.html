@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&family=Julius+Sans+One&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  <script defer src="bundle.js"></script></head>
+  <body id="body">
+    <div class="main">
+      <div class="input-container">
+        <img src="" alt="" class="location-icon white" />
+        <input
+          type="text"
+          placeholder="City name"
+          minlength="1"
+          id="location"
+          name="location"
+        />
+        <button class="btn" id="searchBtn" type="button">Search</button>
+      </div>
+      <div class="switch-container">
+        <!-- Rounded switch -->
+        <span class="celsius">C°</span>
+        <label class="switch">
+          <input id="checkbox" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <span class="fahrenheit">F°</span>
+      </div>
+      <div class="top">
+        <div class="top-left">
+          <!-- <img src="" alt="" class="location-icon white" /> -->
+          <span class="city-name"></span>
+        </div>
+        <div class="top-right">
+          <img
+            src="../src/icons/bars-solid.svg"
+            alt=""
+            class="hamburger white"
+          />
+        </div>
+      </div>
+      <div class="mid">
+        <div class="date-temp-container">
+          <span class="datetime"></span>
+          <div class="temp-container">
+            <span class="temperature"></span>
+            <span class="symbol">°</span>
+          </div>
+          <span class="feels-like"></span>
+        </div>
+        <div class="current-weather-details">
+          <img class="current-weather-icon" src="" alt="" />
+          <span class="weather-description"></span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Later today</p>
+      <div class="cards-container">
+        <div class="card">
+          <img src="" alt="" class="weather-icon" />
+          <span class="time"></span>
+          <span class="temp-small"></span>
+        </div>
+        <div class="card">
+          <img src="" alt="" class="weather-icon" />
+          <span class="time"></span>
+          <span class="temp-small"></span>
+        </div>
+        <div class="card">
+          <img src="" alt="" class="weather-icon" />
+          <span class="time"></span>
+          <span class="temp-small"></span>
+        </div>
+        <div class="card">
+          <img src="" alt="" class="weather-icon" />
+          <span class="time"></span>
+          <span class="temp-small"></span>
+        </div>
+      </div>
+    </div>
+    <div class="extra-info">
+      <div class="label-span-group row">
+        <span class="label-span">Sunrise:</span>
+        <span class="extra-info-span sunrise"></span>
+      </div>
+      <div class="label-span-group row">
+        <span class="label-span">Sunset:</span>
+        <span class="extra-info-span sunset"></span>
+      </div>
+      <div class="label-span-group">
+        <span class="label-span">Pressure</span>
+        <span class="extra-info-span pressure"></span>
+      </div>
+      <div class="label-span-group">
+        <span class="label-span">Humidity</span>
+        <span class="extra-info-span humidity"></span>
+      </div>
+    </div>
+  </body>
+</html>
